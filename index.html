@@ -1,7 +1,141 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <title>mobileweb</title>
+        <meta name="description" content="A basic set web page">
+        <meta name="autot" content="Bob">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <script src="js/jQuery-develop-v1.11.1.js"></script>
+		<script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+        <script src="js/jQuery.js"></script>
+        
+        <link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <link rel="apple-touch-icon-precomposed" href="../img/01.png">
+
+        <noscript>抱歉，您的浏览器不支持 JavaScript！</noscript>
+    </head>
+    <body>
+<!-- 第一个页面 选择入口 -->
+        <div data-role="page" id="page1">
+                <h2 id="page1-h2">老年人应急电话</h2> 
+                <a href="#page2" data-transition="fade" class="page1-btn ui-btn ui-corner-all">欢迎使用</a>
+            <!-- 
+                <a href="#loginPopup" data-rel="popup" data-position-to="window" data-transition="fade" class="page1-btn ui-btn ui-icon-check ui-corner-all ui-btn-icon-left">欢迎使用</a>
+                <div id="loginPopup" data-role="popup" class="ui-content" data-overlay-theme="a" style="min-width: 250px;">
+					<form method="post" action="demoform.php">
+						<div>
+							<h3>登录信息</h3>
+							<label for="usrnm" class="ui-hidden-accessible">用户名：</label>
+							<input type="text" name="user" id="usrnm" placeholder="用户名">
+							<label for="pswd" class="ui-hidden-accessible">密码</label>
+							<input type="password" name="passw" id="pswd" placeholder="密码">
+							<label for="log">保存登录</label>
+							<input type="checkbox" name="login" id="log" value="1" data-mini="true">
+							<input type="submit" data-inline="true" value="登录">
+						</div>
+					</form>
+				</div>	-->     
+        </div>
+<!-- 第二个页面 机器绑定 输入机器编码 -->
+        <div data-role="page" id="page2">
+            <form method="post" action="demoform.php" class="page2-form">
+                <div class="ui-field-contain">
+                    <label for="rcode">机器码：</label>
+                    <input type="text" name="rcode" id="rcode" placeholder="机器码..." data-clear-btn="true" required>
+                </div>
+            <!-- 
+                <input type="submit" value="提交">
+            -->   
+                <a href="#page3" data-transition="fade" class="page1-btn ui-btn ui-corner-all">提交</a>
+        
+            </form>
+        </div>
+<!-- 第三个页面 提示机器确认操作及倒计时 自动跳转 -->
+        <div data-role="page" id="page3">
+            <h2 id="page3-h2-1">剩余时间：</h2>
+            <div class="time">
+                <p id="time-num">15</p>
+                <sub id="time-s">秒</sub>
+            </div>
+            
+            <h2 id="page3-h2-2">请按机器上的按键进行确认</h2>
+        </div>
+<!-- 第四个页面 绑定机器成功 确定 -->
+        <div data-role="page" id="page4">
+            <h2 id="page4-h2">绑定成功</h2>
+            <a href="#page5" data-transition="fade" class="page1-btn ui-btn ui-corner-all">下一步</a>
+            
+        </div>
+<!-- 第五个页面 设置子女电话信息 确定 -->
+        <div data-role="page" id="page5">
+            <h2 id="page5-h2">设置联系人信息</h2>
+            <form method="post" action="demoform.php" class="page5-form">
+                <h3>联系人一：</h3>
+                <div class="ui-field-contain">
+                    <label for="usr1-name">姓名：</label>
+                    <input type="text" name="usr1-name" id="usr1-name" placeholder="姓名..." data-clear-btn="true" required>
+                    <label for="usr1-tel">电话：</label>
+                    <input type="tel" name="usr1-tel" id="usr1-tel" placeholder="电话..." data-clear-btn="true" required>
+                </div>
+                <h3>联系人二：</h3>
+                <div class="ui-field-contain">
+                    <label for="usr2-name">姓名：</label>
+                    <input type="text" name="usr2-name" id="usr2-name" placeholder="姓名..." data-clear-btn="true">
+                    <label for="usr2-tel">电话：</label>
+                    <input type="tel" name="usr2-tel" id="usr2-tel" placeholder="电话..." data-clear-btn="true">
+                </div>
+            <!-- 
+                <input type="submit" value="提交">
+            -->   
+                <a href="#page6" data-transition="fade" class="page5-btn ui-btn ui-corner-all">确认</a>
+        
+            </form>
+
+        </div>
+<!-- 第六个页面 设置机器电话信息 确定 -->
+        <div data-role="page" id="page6">
+            <h2 id="page6-h2">设置机器SIM卡信息</h2>
+            <form method="post" action="demoform.php" class="page6-form">
+                <div class="ui-field-contain">
+                    <label for="rob-name">昵称：</label>
+                    <input type="text" name="rob-name" id="rob-name" placeholder="姓名..." data-clear-btn="true" required>
+                    <label for="rob-tel">电话：</label>
+                    <input type="tel" name="rob-tel" id="rob-tel" placeholder="电话..." data-clear-btn="true" required>
+                </div>
+            <!-- 
+                <input type="submit" value="提交">
+            -->   
+                <a href="#page7" data-transition="fade" class="page6-btn ui-btn ui-corner-all">确认</a>
+        
+            </form>
+        </div>
+<!-- 第七个页面 主页展示（温度、运动图像、联系情况、设置）-->
+        <div data-role="page" id="page7">
+            <h2 id="page7-h2-1">环境温度：</h2>
+            <div class="temp">
+                <p id="temp-num">25</p>
+                <sub id="temp-c">&#8451</sub>
+            </div>
+
+            <h2 id="page7-h2-2">活动状况：</h2>
+            <div class="step">
+                <p id="step-num">525</p>
+                <sub id="step-c">步</sub>
+            </div>
+
+            <h2 id="page7-h2-3">最近联系：</h2>
+            <div class="contact">
+                <p id="contact-date">16</p>
+                <sub id="contact-c">日</sub>
+            </div>
+        </div>
+
+    </body>
+
 </html>

@@ -1,0 +1,143 @@
+#page1 {
+    background-color: white;
+    background-image: url('../img/01.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+#page1-h2 {
+    text-align: center;
+    padding-top: 300px;
+}
+.page1-btn {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+}
+
+#page2 {
+    background-color: #98dafc;
+}
+.page2-form {
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+}
+
+#page3 {
+    background-color: #98dafc;
+}
+#page3-h2-1 {
+    text-align: center;
+    padding-top: 50px;
+}
+.time {
+    text-align: center;
+    margin-top: 50px;
+}
+#time-num {
+    font-size: 100px;
+    display: inline;
+}
+#time-s {
+    font-size: 30px;
+}
+#page3-h2-2 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#page4 {
+    background-color: #98dafc;
+}
+#page4-h2 {
+    text-align: center;
+    padding-top: 250px;
+}
+#page5 {
+    background-color: #98dafc;
+}
+#page5-h2 {
+    text-align: center;
+    padding-top: 0px;
+}
+.page5-form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    padding-top: 0px;
+}
+.page5-btn {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+}
+#page6 {
+    background-color: #98dafc;
+}
+#page6-h2 {
+    text-align: center;
+    padding-top: 0px;
+}
+.page6-form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+.page6-btn {
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+}
+#page7 {
+    background-color: #98dafc;
+}
+#page7-h2-1 {
+    text-align: left;
+    padding-top: 40px;
+    margin-left: 10px;
+}
+.temp {
+    text-align: center;
+}
+#temp-num {
+    font-size: 50px;
+    display: inline;
+}
+#temp-c {
+    font-size: 50px;
+    display: inline;
+}
+#page7-h2-2 {
+    text-align: left;
+    margin-left: 10px;
+}
+.step {
+    text-align: center;
+}
+#step-num {
+    font-size: 50px;
+    display: inline;
+}
+#step-c {
+    font-size: 50px;
+    display: inline;
+}
+#page7-h2-3 {
+    text-align: left;
+    margin-left: 10px;
+}
+.contact {
+    text-align: center;
+}
+#contact-date {
+    font-size: 50px;
+    display: inline;
+}
+#contact-c {
+    font-size: 50px;
+    display: inline;
+}
